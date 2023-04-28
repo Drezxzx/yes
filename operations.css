@@ -1,0 +1,277 @@
+body{
+  background-color: #ba06d645 ;
+}
+.wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}   
+
+div.operation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+}
+div.operation div {
+    padding: 0px 10px;
+}
+input[type="text"] {
+    outline: 0;
+    border: 0px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    font-size: 64px;
+    width: 100px;
+    color: rgb(9, 72, 9);
+    text-align: center;
+    background-color: #ba06d600 ;
+}
+
+.actions {
+    display: flex;    
+    margin-top: 25px;
+}
+
+.actions div {
+    background-color: lightgray;
+    border: 1px solid gray;
+    width: fit-content;
+    
+    border-radius: 5px;
+    margin:  5px;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to top, #850303, #000000) ;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.content {
+    display: flex;
+    width: 40%;
+    background-color: snow;
+    border-radius: 10px;
+}
+
+.content ul {
+    list-style-type: none;
+}
+
+.ok {
+    color: green;
+}
+
+.error {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00000080;
+
+    
+        
+}
+button {
+    background: linear-gradient(to bottom, #c100aa, #0c3d5e);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background: #fff;
+    color: #3498db;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  input::placeholder {
+    font-size: 16px;
+    color: black;
+    
+   
+  }
+
+  .score {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #f7d794;
+    padding: 10px 20px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    color: #333;
+    position: absolute;
+     top: 10px;
+     right: 10px;
+  }
+
+  .green-flash {
+    animation: green-flash 0.5s ease-in-out;
+  }
+  
+  .red-flash {
+    animation: red-flash 0.5s ease-in-out;
+  }
+
+  @keyframes green-flash {
+    0% { background-color: #00ff00; }
+    100% { background-color: transparent; }
+  }
+  
+  
+  @keyframes red-flash {
+    0% { background-color: #ff0000; }
+    100% { background-color: transparent; }
+  }
+
+  .escondido{
+    display: none !important;
+    
+  }
+  .winner{
+    position: absolute;
+    color: whitesmoke;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #00c140, #035422);;
+    height: 100%;
+    flex-direction: column;
+    font-size: 70px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .play{
+    margin-top: 20px;
+    background: linear-gradient(to bottom, #201e4e, #100c5e);
+
+  }
+
+  
+
+
+  .variable{
+    margin-bottom: 50px;
+    
+    
+    
+  }
+
+  .life{
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #f7d89400;
+    padding: 10px 20px 10px;
+    border-radius: 10px;
+  
+    color: #333;
+    position: absolute;
+     top: 60px;
+     right: 0px;
+  }
+
+  .looser{
+    position: absolute;
+    color: whitesmoke;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #9b0404, #450505);;
+    height: 100%;
+    flex-direction: column;
+    font-size: 70px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .hiden{
+    display: none !important;
+  }
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .header {
+    height: 50px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .footer {
+    font-size: 14px;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .header {
+    height: 100px;
+  }
+
+  .menu {
+    display: block;
+    float: left;
+    width: 30%;
+  }
+
+  .content {
+    width: 70%;
+    float: right;
+    margin: 0;
+  }
+
+  .footer {
+    font-size: 16px;
+    padding: 50px;
+  }
+}
+

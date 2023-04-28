@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18. Eventos</title>
+    <script src="operations.js"></script>
+    <link rel="stylesheet" href="operations.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="variable"></div>
+        <div class="operation">
+            <div class="number"></div>
+            <div class="operator">+</div>
+            <div class="number"></div>
+            <div>=</div>
+            <div class="input"><input placeholder="resultado aquí" type="text"></div>
+            <div class="check"></div>
+            <div class="resultok"></div>
+        </div>
+        <div class="actions">
+            <div class="new"><button>🔄</button></div>
+            <div class="test"><button>✔️</button></div>
+            <div class="configure"><button>⚙</button></div>
+            <span class="score">0</span>
+            <span class="life">❤️ ❤️ ❤️</span>
+        </div>
+    </div>
+    <div class="overlay hidden">
+        <div class="content">
+            <ul>
+                <li><input type="checkbox" name="operations" value="+" checked> Sumas</li>
+                <li><input type="checkbox" name="operations" value="-"> Restas</li>
+                <li><input type="checkbox" name="operations" value="*"> Multiplicaciones</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="winner escondido">
+        <div>¡has ganado!</div>
+        <div ><button class="play">jugar de nuevo </button></div>
+    </div>
+
+    <div class="looser hiden">
+        <div>¡has perdido!</div>
+        <div ><button class="empezar">jugar de nuevo </button></div>
+    </div>
+    
+
+</body>
+</html>
