@@ -205,6 +205,9 @@ function hiddenWinner(){
     newOperation()
     score =0;
     updateScore()
+    lifes = 3;
+    updatelife()
+    
 
 }
 
